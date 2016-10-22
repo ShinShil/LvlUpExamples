@@ -1,3 +1,4 @@
+//By Starostin N.A.
 #include <stdio.h>
 
 //Декларация(объявление) функциий
