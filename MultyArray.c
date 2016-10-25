@@ -1,3 +1,4 @@
+//By Nikita Starostin
 #include <stdio.h>
 #include <stdlib.h>
 
