@@ -38,8 +38,16 @@ void main() {
 	fio[SURNAME_INDEX] = "Borisevich";
 	fio[FATHERNAME_INDEX] = "Unknown";
 
-    printLine();
+    	printLine();
 	printf("User 1\n\tName: %s\n\tSurname: %s\n\tFathername: %s", fio[NAME_INDEX], fio[SURNAME_INDEX], fio[FATHERNAME_INDEX]);
 	printLine();
+	/*
+		Для доступа к отдельным элементам:
+		for(int i = 0; i<3; ++i) {
+			for(int j = 0; j<strlen(fio[i]); ++j) {
+				printf("%c\n", fio[i][j]);
+			}
+		}
+	*/
 
 }
