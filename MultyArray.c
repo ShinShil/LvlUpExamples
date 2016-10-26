@@ -34,8 +34,8 @@ void main() {
 		fio[i] = (char*)malloc(sizeof(char) * cols); //каждый элемент fio это char*
 	}
 
-	fio[NAME_INDEX] = "Daniil";
-	fio[SURNAME_INDEX] = "Borisevich";
+	fio[NAME_INDEX] = "Super";
+	fio[SURNAME_INDEX] = "Man";
 	fio[FATHERNAME_INDEX] = "Unknown";
 
     	printLine();
