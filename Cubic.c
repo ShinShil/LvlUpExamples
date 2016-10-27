@@ -11,7 +11,7 @@ void main() {
 	int i,r,sch,och1,och2,s1,s2,s; 
 	srand(time(NULL));
 	system("cls");
-	aaa: printf("Сыграем в кубики?\n1)да 2)нет\n");
+	printf("Сыграем в кубики?\n1)да 2)нет\n");
 	scanf("%d", &i);
 	s1=0; s2=0;
 	if (i==1) {
