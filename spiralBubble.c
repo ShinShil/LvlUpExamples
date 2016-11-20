@@ -28,7 +28,7 @@ void moveDown(int* i, int*j);
 void runLine(void(*move)(int*, int*), void(*next)(int*, int*), int* i, int*j, int amount);
 //other functions
 int* getMatrixElement(int index);
-int** getMatrix();
+void setMatrix();
 void printMatrix();
 void swap(int* a, int* b);
 void printStart();
@@ -113,7 +113,7 @@ void setIterators() {
 	}
 }
 
-void getMatrix() {
+void setMatrix() {
 	arr = (int**)malloc(sizeof(int*)*ROWS);
 	for (int i = 0; i < ROWS; ++i) {
 		arr[i] = (int*)malloc(sizeof(int)*COLS);
