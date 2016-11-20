@@ -113,22 +113,21 @@ void setIterators() {
 	}
 }
 
-int** getMatrix() {
-	int** res = (int**)malloc(sizeof(int*)*ROWS);
+void getMatrix() {
+	arr = (int**)malloc(sizeof(int*)*ROWS);
 	for (int i = 0; i < ROWS; ++i) {
-		res[i] = (int*)malloc(sizeof(int)*COLS);
+		arr[i] = (int*)malloc(sizeof(int)*COLS);
 	}
 	if (isRandomMatrix) {
 		srand((unsigned int)time(NULL));
 		for(int i = 0; i<ROWS;++i) {
 			for (int j = 0; j < COLS; ++j) {
-				res[i][j] = rand() % 10;
+				arr[i][j] = rand() % 10;
 			}
 		}
-		return res;
 	} else {
 		printf("Doesn't implemented manual set array; Please, set isRandomMatrix to TRUE\n\n");
-		return NULL;
+		arr NULL;
 	}
 }
 
